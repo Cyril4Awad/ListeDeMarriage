@@ -1,0 +1,18 @@
+namespace DataService.Others
+{
+    // Thrown by the engines; Main's GlobalExceptionFilter turns each into its HTTP status.
+    public class NotFoundException : Exception
+    {
+        public NotFoundException(string message) : base(message) { }
+    }
+
+    public class ValidationException : Exception
+    {
+        public ValidationException(string message) : base(message) { }
+    }
+
+    public class UnauthorizedException : Exception
+    {
+        public UnauthorizedException(string message) : base(message) { }
+    }
+}

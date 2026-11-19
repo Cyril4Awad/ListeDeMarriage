@@ -1,0 +1,39 @@
+# ---------- not part of this project ----------
+claude-skills/
+
+# ---------- secrets ----------
+# The real settings hold the database connection and the JWT key. Copy
+# appsettings.example.json to appsettings.json and fill it in.
+BackeEnd/Main/appsettings.json
+BackeEnd/Main/appsettings.*.json
+!BackeEnd/Main/appsettings.example.json
+!BackeEnd/Main/appsettings.Development.json
+
+# ---------- .NET build output and IDE files ----------
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.suo
+*.pdb
+**/Properties/PublishProfiles/*.pubxml.user
+BackeEnd/**/publish/
+BackeEnd/**/logs/
+Deployment/*
+
+# ---------- frontend ----------
+ListeDeMariage/node_modules/
+ListeDeMariage/build/
+ListeDeMariage/.env.local
+ListeDeMariage/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ---------- OS / editor ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
